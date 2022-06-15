@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
 
-    <%= link_to 'My Friend List', root_path, class:"navbar-brand"  %>
-    <%# <a class="navbar-brand" href="#">My Friend List</a> %>
+    <%= link_to 'Friends', root_path, class:"navbar-brand"  %>
+    <%# <a class="navbar-brand" href="#">Friend List</a> %>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,13 +15,22 @@
         <%# <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li> %>
-        <li class="nav-item">
 
+        <li class="nav-item">
           <%= link_to 'About Us', home_about_path, class:"nav-link"  %>
           <%# <a class="nav-link" href="#">About Us</a> %>
-
-
         </li>
+
+        <li class="nav-item">
+          <%= link_to 'Friends', friends_path, class:"nav-link"  %>
+          <%# <a class="nav-link" href="#">Friends</a> %>
+        </li>
+
+        <li class="nav-item">
+          <%= link_to 'Add A Friend', new_friend_path, class:"nav-link"  %>
+          <%# <a class="nav-link" href="#">About Us</a> %>
+        </li>
+
         <%# <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
